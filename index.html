@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <div class="border">
+        <div id="tengah">
+            <div>
+                <button onclick="level()" display="none" class="button">PLAY</button>
+            </div>
+        <div>
+            <button onclick="pilihLevel()"  class="buttonlvl" display="none">LEVEL</button>
+        </div>
+        <div id="level" style="display:none;">
+            <button onclick="level(1)" class="lvl"> 1</button>
+            <button onclick="level(2)" class="lvl"> 2</button>
+            <button onclick="level(3)" class="lvl"> 3</button>
+        </div>
+    </div>
+</div>
+<div id="restart" style="display: none;">
+<h1 >GA USAH MAIN KALO GK BISA!</h1><br>
+<button onclick="startGame()" class="buttonrst">RESTART</button>
+</div>
+<div id="win" style="display: none;">
+    <h1>SELAMAT ANDA MENANG!</h1><br>
+    <button onclick="startGame()" class="win">RESTART</button>
+    <button id="next" style="display: none;" onclick="nextlvl()" class="win">NEXT</button>
+    </div>
+
+<script src="game.js"></script>
+</body>
+</html>
